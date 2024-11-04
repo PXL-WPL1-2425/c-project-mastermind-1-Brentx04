@@ -1,0 +1,22 @@
+﻿<Window x:Class="Mastermind.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Mastermind"
+        mc:Ignorable="d"
+        Title="MasterMind" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="142*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="checkCode" Content="Check code" HorizontalAlignment="Left" Margin="270,264,0,0" VerticalAlignment="Top" Height="35" Width="80" Grid.Column="2"/>
+        <ComboBox HorizontalAlignment="Left" Margin="0,24,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="515,24,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.Column="2"/>
+        <ComboBox HorizontalAlignment="Left" Margin="340,23,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.Column="2"/>
+        <ComboBox HorizontalAlignment="Left" Margin="160,24,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.Column="2"/>
+
+    </Grid>
+</Window>
