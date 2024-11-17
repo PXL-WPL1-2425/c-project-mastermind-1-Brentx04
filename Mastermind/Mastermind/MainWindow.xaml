@@ -49,10 +49,10 @@
                 <ComboBoxItem Content="Oranje"/>
             </ComboBox>
         </Grid>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="385,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
-        <TextBlock x:Name="textBlock1" Grid.Column="2" HorizontalAlignment="Left" Margin="35,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="210,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="555,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+        <Label x:Name="Label3" HorizontalAlignment="Left" Margin="385,86,0,0"  VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+        <Label x:Name="Label1" Grid.Column="2" HorizontalAlignment="Left" Margin="35,86,0,0"  VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+        <Label x:Name="Label2" HorizontalAlignment="Left" Margin="210,86,0,0"  VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+        <Label x:Name="Label4" HorizontalAlignment="Left" Margin="555,86,0,0"  VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
 
 
 

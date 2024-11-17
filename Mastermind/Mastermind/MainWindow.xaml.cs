@@ -51,22 +51,22 @@ namespace Mastermind
                 switch (item.Content.ToString().Trim())
                 {
                     case "Wit":
-                        textBlock1.Background = new SolidColorBrush(Colors.White);
+                        Label1.Background = new SolidColorBrush(Colors.White);
                         break;
                     case "Groen":
-                        textBlock1.Background = new SolidColorBrush(Colors.Green);
+                        Label1.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "Blauw":
-                        textBlock1.Background = new SolidColorBrush(Colors.Blue);
+                        Label1.Background = new SolidColorBrush(Colors.Blue);
                         break;
                     case "Rood":
-                        textBlock1.Background = new SolidColorBrush(Colors.Red);
+                        Label1.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case "Geel":
-                        textBlock1.Background = new SolidColorBrush(Colors.Yellow);
+                        Label1.Background = new SolidColorBrush(Colors.Yellow);
                         break;
                     case "Oranje":
-                        textBlock1.Background = new SolidColorBrush(Colors.Orange);
+                        Label1.Background = new SolidColorBrush(Colors.Orange);
                         break;
                     default:
 
@@ -86,22 +86,22 @@ namespace Mastermind
                 switch (item.Content.ToString().Trim())
                 {
                     case "Wit":
-                        textBlock2.Background = new SolidColorBrush(Colors.White);
+                        Label2.Background = new SolidColorBrush(Colors.White);
                         break;
                     case "Groen":
-                        textBlock2.Background = new SolidColorBrush(Colors.Green);
+                        Label2.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "Blauw":
-                        textBlock2.Background = new SolidColorBrush(Colors.Blue);
+                        Label2.Background = new SolidColorBrush(Colors.Blue);
                         break;
                     case "Rood":
-                        textBlock2.Background = new SolidColorBrush(Colors.Red);
+                        Label2.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case "Geel":
-                        textBlock2.Background = new SolidColorBrush(Colors.Yellow);
+                        Label2.Background = new SolidColorBrush(Colors.Yellow);
                         break;
                     case "Oranje":
-                        textBlock2.Background = new SolidColorBrush(Colors.Orange);
+                        Label2.Background = new SolidColorBrush(Colors.Orange);
                         break;
                     default:
 
@@ -121,22 +121,22 @@ namespace Mastermind
                 switch (item.Content.ToString().Trim())
                 {
                     case "Wit":
-                        textBlock3.Background = new SolidColorBrush(Colors.White);
+                        Label3.Background = new SolidColorBrush(Colors.White);
                         break;
                     case "Groen":
-                        textBlock3.Background = new SolidColorBrush(Colors.Green);
+                        Label3.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "Blauw":
-                        textBlock3.Background = new SolidColorBrush(Colors.Blue);
+                        Label3.Background = new SolidColorBrush(Colors.Blue);
                         break;
                     case "Rood":
-                        textBlock3.Background = new SolidColorBrush(Colors.Red);
+                        Label3.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case "Geel":
-                        textBlock3.Background = new SolidColorBrush(Colors.Yellow);
+                        Label3.Background = new SolidColorBrush(Colors.Yellow);
                         break;
                     case "Oranje":
-                        textBlock3.Background = new SolidColorBrush(Colors.Orange);
+                        Label3.Background = new SolidColorBrush(Colors.Orange);
                         break;
                     default:
 
@@ -156,22 +156,22 @@ namespace Mastermind
                 switch (item.Content.ToString().Trim())
                 {
                     case "Wit":
-                        textBlock4.Background = new SolidColorBrush(Colors.White);
+                        Label4.Background = new SolidColorBrush(Colors.White);
                         break;
                     case "Groen":
-                        textBlock4.Background = new SolidColorBrush(Colors.Green);
+                        Label4.Background = new SolidColorBrush(Colors.Green);
                         break;
                     case "Blauw":
-                        textBlock4.Background = new SolidColorBrush(Colors.Blue);
+                        Label4.Background = new SolidColorBrush(Colors.Blue);
                         break;
                     case "Rood":
-                        textBlock4.Background = new SolidColorBrush(Colors.Red);
+                        Label4.Background = new SolidColorBrush(Colors.Red);
                         break;
                     case "Geel":
-                        textBlock4.Background = new SolidColorBrush(Colors.Yellow);
+                        Label4.Background = new SolidColorBrush(Colors.Yellow);
                         break;
                     case "Oranje":
-                        textBlock4.Background = new SolidColorBrush(Colors.Orange);
+                        Label4.Background = new SolidColorBrush(Colors.Orange);
                         break;
                     default:
 
@@ -181,5 +181,5 @@ namespace Mastermind
 
         }
     }
-    //commit 3
+    //commit 4
 }
