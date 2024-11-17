@@ -7,16 +7,54 @@
         mc:Ignorable="d"
         Title="MasterMind" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="13*"/>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="142*"/>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="checkCode" Content="Check code" HorizontalAlignment="Left" Margin="270,264,0,0" VerticalAlignment="Top" Height="35" Width="80" Grid.Column="2"/>
-        <ComboBox HorizontalAlignment="Left" Margin="0,24,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.ColumnSpan="2" Grid.Column="1"/>
-        <ComboBox HorizontalAlignment="Left" Margin="515,24,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.Column="2"/>
-        <ComboBox HorizontalAlignment="Left" Margin="340,23,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.Column="2"/>
-        <ComboBox HorizontalAlignment="Left" Margin="160,24,0,0" VerticalAlignment="Top" Width="150" Height="30" Grid.Column="2"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/mastermind-wallpaper-10.jpg"/>
+        </Grid.Background>
+        <Button x:Name="checkCode" Content="Check code" HorizontalAlignment="Center" Margin="0,244,0,0" VerticalAlignment="Top" Height="70" Width="124" Click="checkCode_Click"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="27*"/>
+                <ColumnDefinition Width="13*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox x:Name="comboBox1" HorizontalAlignment="Left" Margin="35,21,0,0" VerticalAlignment="Top" Width="150" Height="30" SelectionChanged="comboBox1_SelectionChanged">
+                <ComboBoxItem Content="Wit" />
+                <ComboBoxItem Content="Groen"/>
+                <ComboBoxItem Content="Blauw"/>
+                <ComboBoxItem Content="Rood"/>
+                <ComboBoxItem Content="Geel"/>
+                <ComboBoxItem Content="Oranje"/>
+            </ComboBox>
+            <ComboBox x:Name="comboBox4" SelectionChanged="comboBox4_SelectionChanged" VerticalAlignment="Top"  HorizontalAlignment="Left" Margin="10,22,0,0" Width="150" Height="30" Grid.Column="1">
+                <ComboBoxItem Content="Wit"/>
+                <ComboBoxItem Content="Groen"/>
+                <ComboBoxItem Content="Blauw"/>
+                <ComboBoxItem Content="Rood"/>
+                <ComboBoxItem Content="Geel"/>
+                <ComboBoxItem Content="Oranje"/>
+            </ComboBox>
+            <ComboBox x:Name="comboBox3" HorizontalAlignment="Left" Margin="380,22,0,0" VerticalAlignment="Top" Width="150" Height="30" SelectionChanged="comboBox3_SelectionChanged" RenderTransformOrigin="0.633,0.268">
+                <ComboBoxItem Content="Wit"/>
+                <ComboBoxItem Content="Groen"/>
+                <ComboBoxItem Content="Blauw"/>
+                <ComboBoxItem Content="Rood"/>
+                <ComboBoxItem Content="Geel"/>
+                <ComboBoxItem Content="Oranje"/>
+            </ComboBox>
+            <ComboBox x:Name="comboBox2" HorizontalAlignment="Left" Margin="210,21,0,0" VerticalAlignment="Top" Width="150" Height="30" SelectionChanged="comboBox2_SelectionChanged">
+                <ComboBoxItem Content="Wit"/>
+                <ComboBoxItem Content="Groen"/>
+                <ComboBoxItem Content="Blauw"/>
+                <ComboBoxItem Content="Rood"/>
+                <ComboBoxItem Content="Geel"/>
+                <ComboBoxItem Content="Oranje"/>
+            </ComboBox>
+        </Grid>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="385,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="2" HorizontalAlignment="Left" Margin="35,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="210,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="555,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="94" Width="150" IsEnabled="False"/>
+
+
 
     </Grid>
 </Window>

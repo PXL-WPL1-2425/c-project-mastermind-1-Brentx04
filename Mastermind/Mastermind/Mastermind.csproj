@@ -8,4 +8,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="mastermind-wallpaper-10.jpg" />
+    <None Remove="mastermind.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="mastermind-wallpaper-10.jpg" />
+    <Resource Include="mastermind.jpg" />
+  </ItemGroup>
+
 </Project>
