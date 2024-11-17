@@ -16,8 +16,6 @@ namespace Mastermind
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly string[] colors = { "rood", "geel", "oranje", "wit", "groen", "blauw" };
-
         public MainWindow()
         {
             InitializeComponent();
@@ -37,6 +35,54 @@ namespace Mastermind
 
 
             this.Title = $"Kleurencode: {colorCode}";
+
+            string[] userColors = new string[]
+            {
+                GetComboBoxValue(comboBox1),
+                GetComboBoxValue(comboBox2),
+                GetComboBoxValue(comboBox3),
+                GetComboBoxValue(comboBox4)
+            };
+
+          
+            for (int i = 0; i < userColors.Length; i++)
+            {
+                string userColor = userColors[i];
+                Label label = FindLabel(i + 1);
+
+                if (userColor == colorCode)
+                {
+                   
+                    label.BorderBrush = new SolidColorBrush(Colors.DarkRed);
+                    label.BorderThickness = new Thickness(3);
+                }
+                else if (colorCode.Contains(userColor))
+                {
+                    
+                    label.BorderBrush = new SolidColorBrush(Colors.Wheat);
+                    label.BorderThickness = new Thickness(3);
+                }
+                else
+                {
+                    
+                    label.BorderBrush = null;
+                    label.BorderThickness = new Thickness(0);
+                }
+            }
+        }
+        private string GetComboBoxValue(ComboBox comboBox)
+        {
+            if (comboBox.SelectedItem is ComboBoxItem selectedItem)
+            {
+                return selectedItem.Content.ToString().Trim().ToLower();
+            }
+            return string.Empty;
+        }
+
+        private Label FindLabel(int index)
+        {
+            
+            return (Label)this.FindName($"Label{index}");
         }
 
         private void comboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -181,5 +227,4 @@ namespace Mastermind
 
         }
     }
-    //commit 3
 }
